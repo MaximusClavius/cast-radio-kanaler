@@ -18,38 +18,9 @@ Forberedringer:
 - Sexy er den ikke, men den virker. Hvordan den bliver sexy og med ikon for stationerne svæver ude i fremtiden... :)
 
 Implementering:
-
 Jeg smed følgende inputs i configuration.yaml
-input_select:
-  radio_station:
-    name: 'Vælg radiokanal:'
-    options:
-      - DR P1
-      - DR P2
-      - DR P3
-      - DR P4 Fyn
-      - DR P5 Fyn
-      - DR P6
-      - DR P8
-    initial: DR P4 Fyn
-    icon: mdi:radio
-  chromecast_radio:
-    name: 'Vælg højttaler:'
-    options:
-      - Køkken
-      - Stue
-      - Kontor
-    initial: Kontor
-    icon: mdi:speaker-wireless
-
-input_number: 
-  volume_radio:
-    name: Lydstyrke
-    icon: mdi:volume-high
-    initial: 0.5
-    min: 0
-    max: 1
-    step: 0.1
+input_select og input_number er formatteret korrekt her: https://github.com/MaximusClavius/cast-radio-kanaler/blob/main/inputs
+Jeg smed følgende inputs i configuration.yaml
 
 og lavede følgende script, som jeg gemte i scripts.yaml
 play_radio_channel:
