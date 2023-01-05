@@ -23,46 +23,8 @@ Jeg smed følgende inputs i configuration.yaml
 input_select og input_number er formatteret korrekt her: https://github.com/MaximusClavius/cast-radio-kanaler/blob/main/inputs
 Jeg smed følgende inputs i configuration.yaml
 
-og lavede følgende script, som jeg gemte i scripts.yaml
-play_radio_channel:
-  alias: Spil radio
-  sequence:
-    - service: media_player.volume_set
-      data_template:
-        entity_id: >
-          {% if is_state("input_select.chromecast_radio", "Køkken") %} media_player.kitchen
-          {% elif is_state("input_select.chromecast_radio", "Stue") %} media_player.living_room
-          {% elif is_state("input_select.chromecast_radio", "Kontor") %} media_player.office
-          {% endif %}
-        volume_level: '{{  states.input_number.volume_radio.state  }}'
-    - service: media_player.play_media
-      data_template:
-        entity_id: >
-          {% if is_state("input_select.chromecast_radio", "Køkken") %} media_player.kitchen
-          {% elif is_state("input_select.chromecast_radio", "Stue") %} media_player.living_room
-          {% elif is_state("input_select.chromecast_radio", "Kontor") %} media_player.office
-          {% endif %}
-        media_content_id: >
-          {% if is_state("input_select.radio_station", "DR P1") %} 	http://live-icy.dr.dk/A/A03H.mp3
-          {% elif is_state("input_select.radio_station", "DR P2") %} 	http://live-icy.dr.dk/A/A04H.mp3
-          {% elif is_state("input_select.radio_station", "DR P3") %} http://live-icy.dr.dk/A/A05H.mp3
-          {% elif is_state("input_select.radio_station", "DR P4 Fyn") %} https://live-icy.dr.dk/A/A07H.mp3
-          {% elif is_state("input_select.radio_station", "DR P5 Fyn") %} https://live-icy.dr.dk/A/A02H.mp3
-          {% elif is_state("input_select.radio_station", "DR P6") %} http://live-icy.dr.dk/A/A29H.mp3
-          {% elif is_state("input_select.radio_station", "DR P8") %} http://live-icy.dr.dk/A/A22H.mp3
-          {% endif %}
-        media_content_type: audio/mp3
-
-stop_playing:
-  alias: Stop afspilning
-  sequence:
-    - service: media_player.media_stop
-      data_template:
-        entity_id: >
-          {% if is_state("input_select.chromecast_radio", "Køkken") %} media_player.kitchen
-          {% elif is_state("input_select.chromecast_radio", "Stue") %} media_player.living_room
-          {% elif is_state("input_select.chromecast_radio", "Kontor") %} media_player.office
-          {% endif %}
+og lavede følgende script til at starte og afslutte afspilning, som jeg gemte i scripts.yaml
+https://github.com/MaximusClavius/cast-radio-kanaler/blob/main/script
 
 Det non-sexy korts yaml ser sådan ud:
 type: entities
