@@ -19,8 +19,8 @@ play_radio_channel:
           {% elif is_state("input_select.chromecast_radio", "Kontor") %} media_player.office
           {% endif %}
         media_content_id: >
-          {% if is_state("input_select.radio_station", "DR P1") %} 	https://drliveradio.akamaized.net/hls/live/2022411/p1/master_ab23.m3u8
-          {% elif is_state("input_select.radio_station", "DR P2") %} 	https://drliveradio.akamaized.net/hls/live/2022411/p2/master_ab23.m3u8
+          {% if is_state("input_select.radio_station", "DR P1") %} https://drliveradio.akamaized.net/hls/live/2022411/p1/master_ab23.m3u8
+          {% elif is_state("input_select.radio_station", "DR P2") %} https://drliveradio.akamaized.net/hls/live/2022411/p2/master_ab23.m3u8
           {% elif is_state("input_select.radio_station", "DR P3") %} https://drliveradio.akamaized.net/hls/live/2022411/p3/master_ab23.m3u8
           {% elif is_state("input_select.radio_station", "DR P4 Fyn") %} https://drliveradio.akamaized.net/hls/live/2022411/p4fyn/master_ab23.m3u8
           {% elif is_state("input_select.radio_station", "DR P5 Fyn") %} https://drliveradio.akamaized.net/hls/live/2022411/p5fyn/master_ab23.m3u8
