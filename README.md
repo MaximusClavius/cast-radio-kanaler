@@ -15,6 +15,7 @@ Det virker med mp3 links, og er langt hurtigere end at anvende referencerne til 
 Forberedringer:
 - Lydstyrke ændringen viker ved at trykke "Spil radio", altså samme kanal og anden lydniveau.
 - I stedet for "Spil radio" og "Stop afspilning" med tilhørende "kør"-knapper, så skal der findes en layout som ligner en normal mediaplayer.
+- Formattet AAC forbedre lydkvaliteten af mp3, men understøtter HA dette!?
 - Sexy er den ikke, men den virker. Hvordan den bliver sexy og med ikon for stationerne svæver ude i fremtiden... :)
 
 Implementering:
