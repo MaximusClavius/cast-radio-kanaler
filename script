@@ -19,15 +19,15 @@ play_radio_channel:
           {% elif is_state("input_select.chromecast_radio", "Kontor") %} media_player.office
           {% endif %}
         media_content_id: >
-          {% if is_state("input_select.radio_station", "DR P1") %} 	http://live-icy.dr.dk/A/A03H.mp3
-          {% elif is_state("input_select.radio_station", "DR P2") %} 	http://live-icy.dr.dk/A/A04H.mp3
-          {% elif is_state("input_select.radio_station", "DR P3") %} http://live-icy.dr.dk/A/A05H.mp3
-          {% elif is_state("input_select.radio_station", "DR P4 Fyn") %} https://live-icy.dr.dk/A/A07H.mp3
-          {% elif is_state("input_select.radio_station", "DR P5 Fyn") %} https://live-icy.dr.dk/A/A02H.mp3
-          {% elif is_state("input_select.radio_station", "DR P6") %} http://live-icy.dr.dk/A/A29H.mp3
-          {% elif is_state("input_select.radio_station", "DR P8") %} http://live-icy.dr.dk/A/A22H.mp3
+          {% if is_state("input_select.radio_station", "DR P1") %} 	https://drliveradio.akamaized.net/hls/live/2022411/p1/master_ab23.m3u8
+          {% elif is_state("input_select.radio_station", "DR P2") %} 	https://drliveradio.akamaized.net/hls/live/2022411/p2/master_ab23.m3u8
+          {% elif is_state("input_select.radio_station", "DR P3") %} https://drliveradio.akamaized.net/hls/live/2022411/p3/master_ab23.m3u8
+          {% elif is_state("input_select.radio_station", "DR P4 Fyn") %} https://drliveradio.akamaized.net/hls/live/2022411/p4fyn/master_ab23.m3u8
+          {% elif is_state("input_select.radio_station", "DR P5 Fyn") %} https://drliveradio.akamaized.net/hls/live/2022411/p5fyn/master_ab23.m3u8
+          {% elif is_state("input_select.radio_station", "DR P6") %} https://drliveradio.akamaized.net/hls/live/2022411/p6beat/master_ab23.m3u8
+          {% elif is_state("input_select.radio_station", "DR P8") %} https://drliveradio.akamaized.net/hls/live/2022411/p8jazz/master_ab23.m3u8
           {% endif %}
-        media_content_type: audio/mp3
+        media_content_type: music
 
 stop_playing:
   alias: Stop afspilning
