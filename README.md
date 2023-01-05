@@ -20,7 +20,7 @@ Forbedringer:
 
 Implementering:
 Jeg smed følgende inputs i configuration.yaml
-input_select og input_number er formatteret korrekt her: https://github.com/MaximusClavius/cast-radio-kanaler/blob/main/inputs
+input_select og input_number er formateret korrekt her: https://github.com/MaximusClavius/cast-radio-kanaler/blob/main/inputs
 Jeg smed følgende inputs i configuration.yaml
 
 og lavede følgende script til at starte og afslutte afspilning, som jeg gemte i scripts.yaml
