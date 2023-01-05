@@ -1,0 +1,11 @@
+type: entities
+entities:
+  - entity: input_select.radio_station
+  - entity: input_select.chromecast_radio
+  - entity: input_number.volume_radio
+  - entity: script.play_radio_channel
+    icon: mdi:play
+  - entity: script.stop_playing
+    icon: mdi:stop
+title: Danmarks Radio
+state_color: false
