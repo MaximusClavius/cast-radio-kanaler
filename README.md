@@ -26,17 +26,9 @@ Jeg smed følgende inputs i configuration.yaml
 og lavede følgende script til at starte og afslutte afspilning, som jeg gemte i scripts.yaml
 https://github.com/MaximusClavius/cast-radio-kanaler/blob/main/script
 
-Det non-sexy korts yaml ser sådan ud:
-type: entities
-entities:
-  - entity: input_select.radio_station
-  - entity: input_select.chromecast_radio
-  - entity: input_number.volume_radio
-  - entity: script.play_radio_channel
-    icon: mdi:play
-  - entity: script.stop_playing
-    icon: mdi:stop
-title: Danmarks Radio
-state_color: false
+Det non-sexy korts yaml ser sådan ud: https://github.com/MaximusClavius/cast-radio-kanaler/blob/main/card-entilities
+
+Tilføje eller fjerne radiokanaler skal ske i "input_select: radio_station", og i script: play_radio_channel under "media_content_id:" med relevant link fra Danish Radio Streams. Husk korrekt formattering!
+Samme metode for flere eller færre højttalere.
 
 Genstart scripts og input under udviklingsværktøjer > YAML eller genstart kunfiguration
