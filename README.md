@@ -12,10 +12,10 @@ Jeg har dette kort, hvor jeg har muligheden for at vælge kanal, vælg lokation 
 
 Det virker med mp3 links, og er langt hurtigere end at anvende referencerne til mpeg fra Radio Browser under medier.
 
-Forberedringer:
+Forbedringer:
 - Lydstyrke ændringen virker ved at trykke "Spil radio", altså samme kanal og anden lydniveau.
 - I stedet for "Spil radio" og "Stop afspilning" med tilhørende "kør"-knapper, så skal der findes en layout som ligner en normal mediaplayer.
-- Formattet AAC forbedre lydkvaliteten af mp3, men understøtter HA dette!?
+- Formatet AAC forbedrer lydkvaliteten af mp3, men understøtter HA dette!?
 - Sexy er den ikke, men den virker. Hvordan den bliver sexy og med ikon for stationerne svæver ude i fremtiden... :)
 
 Implementering:
@@ -28,7 +28,7 @@ https://github.com/MaximusClavius/cast-radio-kanaler/blob/main/script
 
 Det non-sexy korts yaml ser sådan ud: https://github.com/MaximusClavius/cast-radio-kanaler/blob/main/card-entilities
 
-Tilføje eller fjerne radiokanaler skal ske i "input_select: radio_station", og i script: play_radio_channel under "media_content_id:" med relevant link fra Danish Radio Streams. Husk korrekt formattering!
+Tilføje eller fjerne radiokanaler skal ske i "input_select: radio_station", og i script: play_radio_channel under "media_content_id:" med relevant link fra Danish Radio Streams. Husk korrekt formatering!
 Samme metode for flere eller færre højttalere.
 
 Genstart scripts og input under udviklingsværktøjer > YAML eller genstart kunfiguration
