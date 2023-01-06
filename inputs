@@ -24,7 +24,7 @@ input_select:
 
 input_number: 
   volume_radio:
-    name: Lydstyrke
+    name: Sæt lydstyrke
     icon: mdi:volume-high
     initial: 0.5
     min: 0
