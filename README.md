@@ -3,9 +3,9 @@ Cast radiokanaler til højttalere/Cast radio channels to speakers
 
 Jeg har en del Google Nest minis og JBL Flip, som jeg gerne vil bruge til afspilning af musik.
 Jeg prøvede at bruge integration: Radio Browser, som gemmer alverdens radiokanaler under medier. 
-Den anvender formatet mpeg, som normalt bruges til digital video og lyd, altså video/film.
+Den anvender formatet MPEG, som normalt bruges til digital video og lyd, altså video/film.
 Derfor begyndte jeg at kigge efter MP3 og streams, og fandt denne hjemmeside, Danish Radio Streams: https://www.astra2sat.com/danish-radio-streams/. 
-Der er en fejl for DR P1, men den reference findes på DRs egen hjemmeside: https://dr.custhelp.com/app/answers/detail/a_id/1666/~/hvor-finder-jeg-de-direkte-links-til-drs-radiokanaler%3F
+Der er en fejl for DR P1, men den reference findes på DRs egen hjemmeside: https://dr.custhelp.com/app/answers/detail/a_id/1666/~/hvor-finder-jeg-de-direkte-links-til-drs-radiokanaler%3F. Den side refererer til et kvalitativt bedre format end MP3, nemlig AAC.
 
 Jeg har dette kort, hvor jeg har muligheden for at vælge kanal, vælge højttalere og sætte lydstyrken + spil og stop. Bemærk at nederste linje som forestiller en "musicplayer" kræver man installere en HACS frontend: multiple-entity-row og card-mod.
 
@@ -21,6 +21,8 @@ Forbedringer:
 - Der skal gøres noget ved farverne på tekst og ikoner
 
 Implementering:
+Jeg lavede en gruppe med alle mine højttalere under Indstillinger > Enheder og tjenester > Hjælpere - hvor jeg valgte en gruppe fra "Media player gruppe" og tilføjede enhederne.
+
 Jeg smed følgende inputs i configuration.yaml
 input_select og input_number er formateret korrekt her: https://github.com/MaximusClavius/cast-radio-kanaler/blob/main/inputs
 Jeg smed følgende inputs i configuration.yaml
