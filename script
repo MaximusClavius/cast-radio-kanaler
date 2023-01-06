@@ -21,6 +21,17 @@ play_radio_channel:
           {% elif is_state("input_select.radio_station", "DR P8") %} https://drliveradio.akamaized.net/hls/live/2022411/p8jazz/master_ab23.m3u8
           {% endif %}
         media_content_type: music
+        extra:
+          thumb: >
+            {% if is_state("input_select.radio_station", "DR P1") %} http://homeassistant.local:8123/local/P1_logo.png
+            {% elif is_state("input_select.radio_station", "DR P2") %} http://homeassistant.local:8123/local/P2_logo.png
+            {% elif is_state("input_select.radio_station", "DR P3") %} http://homeassistant.local:8123/local/P3_logo.png
+            {% elif is_state("input_select.radio_station", "DR P4 Fyn") %} http://homeassistant.local:8123/local/P4_logo.png
+            {% elif is_state("input_select.radio_station", "DR P5 Fyn") %} http://homeassistant.local:8123/local/P5_logo.png
+            {% elif is_state("input_select.radio_station", "DR P6") %} http://homeassistant.local:8123/local/P6_logo.png
+            {% elif is_state("input_select.radio_station", "DR P8") %} http://homeassistant.local:8123/local/P8_logo.png
+            {% endif %}
+          title: Danmarks Radio
 
 set_volume:
   alias: Sæt lydstyrke
