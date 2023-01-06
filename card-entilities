@@ -1,7 +1,32 @@
 type: entities
+style: |
+  ha-card {
+    padding: 0% 0% 25% 0%;
+    background:
+      {% if is_state("input_select.radio_station", "DR P1") %} url('/local/P1_logo.png');
+      {% elif is_state("input_select.radio_station", "DR P2") %} url('/local/P2_logo.png');
+      {% elif is_state("input_select.radio_station", "DR P3") %} url('/local/P3_logo.png');
+      {% elif is_state("input_select.radio_station", "DR P4 Fyn") %} url('/local/P4_logo.png');
+      {% elif is_state("input_select.radio_station", "DR P5 Fyn") %} url('/local/P5_logo.png');
+      {% elif is_state("input_select.radio_station", "DR P6") %} url('/local/P6_logo.png');
+      {% elif is_state("input_select.radio_station", "DR P8") %} url('/local/P8_logo.png');
+      {% endif %}
+    background-size: 100% 100%;
+    background-color: transparent;
+  }
 entities:
   - entity: input_select.radio_station
+    card_mod:
+      style: |
+        :host {
+          --mdc-select-fill-color: transparent;
+        }
   - entity: input_select.chromecast_radio
+    card_mod:
+      style: |
+        :host {
+          --mdc-select-fill-color: transparent;
+        }
   - entity: input_number.volume_radio
   - type: section
   - entity: script.play_radio_channel
@@ -11,20 +36,20 @@ entities:
     name: Lyt til radiokanal
     secondary_info: last-changed
     entities:
-      - icon: mdi:volume-high
-        name: Sæt styrke
-        tap_action:
-          action: call-service
-          service: script.set_volume
-      - icon: mdi:play
-        name: Spil
-        tap_action:
-          action: call-service
-          service: script.play_radio_channel
       - icon: mdi:stop
         name: Stop
         tap_action:
           action: call-service
           service: script.stop_playing
-title: Danmarks Radio
+      - icon: mdi:play
+        name: Spil
+        tap_action:
+          action: call-service
+          service: script.play_radio_channel
+      - icon: mdi:volume-high
+        name: Sæt styrke
+        tap_action:
+          action: call-service
+          service: script.set_volume
+title: Danske radiokanaler
 state_color: false
