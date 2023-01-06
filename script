@@ -3,14 +3,6 @@
 play_radio_channel:
   alias: Spil radio
   sequence:
-    - service: media_player.volume_set
-      data_template:
-        entity_id: >
-          {% if is_state("input_select.chromecast_radio", "Køkken") %} media_player.kitchen
-          {% elif is_state("input_select.chromecast_radio", "Stue") %} media_player.living_room
-          {% elif is_state("input_select.chromecast_radio", "Kontor") %} media_player.office
-          {% endif %}
-        volume_level: '{{  states.input_number.volume_radio.state  }}'
     - service: media_player.play_media
       data_template:
         entity_id: >
@@ -29,6 +21,18 @@ play_radio_channel:
           {% endif %}
         media_content_type: music
 
+set_volume:
+  alias: Sæt lydstyrke
+  sequence:
+    - service: media_player.volume_set
+      data_template:
+        entity_id: >
+          {% if is_state("input_select.chromecast_radio", "Køkken") %} media_player.kitchen
+          {% elif is_state("input_select.chromecast_radio", "Stue") %} media_player.living_room
+          {% elif is_state("input_select.chromecast_radio", "Kontor") %} media_player.office
+          {% endif %}
+        volume_level: '{{  states.input_number.volume_radio.state  }}'
+
 stop_playing:
   alias: Stop afspilning
   sequence:
@@ -39,4 +43,3 @@ stop_playing:
           {% elif is_state("input_select.chromecast_radio", "Stue") %} media_player.living_room
           {% elif is_state("input_select.chromecast_radio", "Kontor") %} media_player.office
           {% endif %}
-          
