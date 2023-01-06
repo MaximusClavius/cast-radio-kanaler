@@ -19,6 +19,7 @@ input_select:
       - Køkken
       - Stue
       - Kontor
+      - Alle
     initial: Kontor
     icon: mdi:speaker-wireless
 
