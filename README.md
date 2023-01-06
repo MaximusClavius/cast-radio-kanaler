@@ -13,7 +13,7 @@ Jeg har dette kort, hvor jeg har muligheden for at vælge kanal, vælg lokation 
 Det virker med mp3 links, og er langt hurtigere end at anvende referencerne til mpeg fra Radio Browser under medier.
 
 Forbedringer:
-- Lydstyrke ændringen virker ved at trykke "Spil radio", altså samme kanal og anden lydniveau.
+- <del>Lydstyrke ændringen virker ved at trykke "Spil radio", altså samme kanal og anden lydniveau.</del>
 - <del>I stedet for "Spil radio" og "Stop afspilning" med tilhørende "kør"-knapper, så skal der findes et layout som ligner en normal mediaplayer.</del>
 - <del>Formatet AAC har en bedre lydkvalitet end mp3, men understøtter HA dette!?</del>
 - Sexy er den ikke, men den virker. Hvordan den bliver sexy og med ikon for stationerne svæver ude i fremtiden... :)
