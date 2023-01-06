@@ -8,13 +8,13 @@ Derfor begyndte jeg at kigge efter mp3 og streams, og fandt denne hjemmeside, Da
 Der er en fejl for DR P1, men den reference findes på DRs egen hjemmeside: https://dr.custhelp.com/app/answers/detail/a_id/1666/~/hvor-finder-jeg-de-direkte-links-til-drs-radiokanaler%3F
 
 Jeg har dette kort, hvor jeg har muligheden for at vælge kanal, vælg lokation og sætte lydstyrken + tænd og sluk.
-![image](https://user-images.githubusercontent.com/103023823/210777360-8eb1d308-b47c-459b-bb06-586d5f4f94dd.png)
+![image](https://user-images.githubusercontent.com/103023823/210921754-77c16198-f52f-4795-8a63-16e9a5709c74.png)
 
 Det virker med mp3 links, og er langt hurtigere end at anvende referencerne til mpeg fra Radio Browser under medier.
 
 Forbedringer:
 - Lydstyrke ændringen virker ved at trykke "Spil radio", altså samme kanal og anden lydniveau.
-- I stedet for "Spil radio" og "Stop afspilning" med tilhørende "kør"-knapper, så skal der findes et layout som ligner en normal mediaplayer.
+- <del>I stedet for "Spil radio" og "Stop afspilning" med tilhørende "kør"-knapper, så skal der findes et layout som ligner en normal mediaplayer.</del>
 - <del>Formatet AAC har en bedre lydkvalitet end mp3, men understøtter HA dette!?</del>
 - Sexy er den ikke, men den virker. Hvordan den bliver sexy og med ikon for stationerne svæver ude i fremtiden... :)
 
