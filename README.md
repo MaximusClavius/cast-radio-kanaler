@@ -31,4 +31,4 @@ Det non-sexy korts yaml ser sådan ud: https://github.com/MaximusClavius/cast-ra
 Tilføje eller fjerne radiokanaler skal ske i "input_select: radio_station", og i script: play_radio_channel under "media_content_id:" med relevant link fra Danish Radio Streams. Husk korrekt formatering!
 Samme metode for flere eller færre højttalere.
 
-Genstart scripts og input under udviklingsværktøjer > YAML eller genstart kunfiguration
+Genstart scripts og input under udviklingsværktøjer > YAML eller genstart konfiguration
