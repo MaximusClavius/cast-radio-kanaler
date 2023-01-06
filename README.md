@@ -9,7 +9,7 @@ Der er en fejl for DR P1, men den reference findes på DRs egen hjemmeside: http
 
 Jeg har dette kort, hvor jeg har muligheden for at vælge kanal, vælge højttalere og sætte lydstyrken + spil og stop. Bemærk at nederste linje som forestiller en "musicplayer" kræver man installere en HACS frontend: multiple-entity-row og card-mod.
 
-![image](https://user-images.githubusercontent.com/103023823/210968251-46572a87-5ce8-4a8d-8936-0e941711ac6b.png)
+![image](https://user-images.githubusercontent.com/103023823/210968251-46572a87-5ce8-4a8d-8936-0e941711ac6b.png =250x250)
 
 Det virker med MP3 links, og er langt hurtigere end at anvende referencerne til MPEG fra Radio Browser under medier. Jeg endte med at vælge AAC formatet, da kvaliteten er bedre på AAC end MP3.
 
