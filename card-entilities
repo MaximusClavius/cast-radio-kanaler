@@ -2,18 +2,20 @@ type: entities
 card_mod:
   style: |
     ha-card {
+      background-image:
+        {% if is_state("input_select.radio_station", "DR P1") %} url('/local/P1_logo.png')
+        {% elif is_state("input_select.radio_station", "DR P2") %} url('/local/P2_logo.png')
+        {% elif is_state("input_select.radio_station", "DR P3") %} url('/local/P3_logo.png')
+        {% elif is_state("input_select.radio_station", "DR P4 Fyn") %} url('/local/P4_logo.png')
+        {% elif is_state("input_select.radio_station", "DR P5 Fyn") %} url('/local/P5_logo.png')
+        {% elif is_state("input_select.radio_station", "DR P6") %} url('/local/P6_logo.png')
+        {% elif is_state("input_select.radio_station", "DR P8") %} url('/local/P8_logo.png')
+        {% endif %} !important;
+      background-repeat: no-repeat !important;
       padding: 0% 0% 25% 0%;
-      background:
-        {% if is_state("input_select.radio_station", "DR P1") %} url('/local/P1_logo.png');
-        {% elif is_state("input_select.radio_station", "DR P2") %} url('/local/P2_logo.png');
-        {% elif is_state("input_select.radio_station", "DR P3") %} url('/local/P3_logo.png');
-        {% elif is_state("input_select.radio_station", "DR P4 Fyn") %} url('/local/P4_logo.png');
-        {% elif is_state("input_select.radio_station", "DR P5 Fyn") %} url('/local/P5_logo.png');
-        {% elif is_state("input_select.radio_station", "DR P6") %} url('/local/P6_logo.png');
-        {% elif is_state("input_select.radio_station", "DR P8") %} url('/local/P8_logo.png');
-        {% endif %}
       background-size: 100% 100%;
-      background-color: transparent;
+      background-color: rgba(255,255,255,0.4);
+      background-blend-mode: lighten;
     }
 entities:
   - entity: input_select.radio_station
