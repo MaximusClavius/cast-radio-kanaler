@@ -19,7 +19,7 @@ Forbedringer:
 - <del>Formatet AAC har en bedre lydkvalitet end MP3, men understøtter HA dette!?</del>
 - <del>Sexy er den ikke, men den virker. Hvordan den bliver sexy og med ikon for stationerne svæver ude i fremtiden... :)</del>
 - <del>Lydstyrke skal virke straks ved at bruge "slider" og burde være i intervallet 0 .. 100</del>
-- Der skal gøres noget ved farverne på tekst og ikoner. Jeg drømmer om en "tåget baggrund" med klar tekst, men "opacity = 30%" tåger både bag- og forgrund.
+- <del>Der skal gøres noget ved farverne på tekst og ikoner. Jeg drømmer om en "tåget baggrund" med klar tekst, men "opacity = 30%" tåger både bag- og forgrund.</del>
 
 Implementering:
 Jeg lavede en gruppe med alle mine højttalere under Indstillinger > Enheder og tjenester > Hjælpere - hvor jeg valgte en gruppe fra "Media player gruppe" og tilføjede enhederne.
@@ -34,6 +34,9 @@ https://github.com/MaximusClavius/cast-radio-kanaler/blob/main/script
 og følgende automation for at kunne ændre lydstyrke ved direkte berøring.
 
 Dette korts yaml ser sådan ud: https://github.com/MaximusClavius/cast-radio-kanaler/blob/main/card-entilities
+Ønsker man at baggrunden skal være anderledes, så kan man ændre disse to CSS attributer:
+background-color: rgba(255, 255, 255, 0.3); <- alfa: 0.3 giver størst effekt.
+background-blend-mode: lighten; <- alternativer: normal | multiply | screen | overlay | darken | lighten | color-dodge | color-burn | hard-light | soft-light | difference | exclusion | hue |saturation | color | luminosity
 
 Tilføje eller fjerne radiokanaler skal ske i "input_select: radio_station", og i script: play_radio_channel under "media_content_id:" med relevant link fra Danish Radio Streams. Husk korrekt formatering!
 Samme metode for flere eller færre højttalere.
