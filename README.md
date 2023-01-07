@@ -18,7 +18,7 @@ Forbedringer:
 - <del>I stedet for "Spil radio" og "Stop afspilning" med tilhørende "kør"-knapper, så skal der findes et layout som ligner en normal mediaplayer.</del>
 - <del>Formatet AAC har en bedre lydkvalitet end MP3, men understøtter HA dette!?</del>
 - <del>Sexy er den ikke, men den virker. Hvordan den bliver sexy og med ikon for stationerne svæver ude i fremtiden... :)</del>
-- <del>Lydstyrker virker straks ved at bruge "slider"</del>
+- <del>Lydstyrke skal virke straks ved at bruge "slider"</del>
 - Der skal gøres noget ved farverne på tekst og ikoner. Jeg drømmer om en "tåget baggrund" med klar tekst, men "opacity = 30%" tåger både bag- og forgrund.
 
 Implementering:
