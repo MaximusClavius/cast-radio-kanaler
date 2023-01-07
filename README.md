@@ -1,6 +1,7 @@
 # cast-radio-kanaler
 Cast radiokanaler til højttalere/Cast radio channels to speakers
 
+<img src="https://user-images.githubusercontent.com/103023823/211158504-0a5ddada-555f-4ddf-9970-5425969c164d.png" width="300" height="300">
 Jeg har en del Google Nest minis og JBL Flip, som jeg gerne vil bruge til afspilning af musik.
 Jeg prøvede at bruge integration: Radio Browser, som gemmer alverdens radiokanaler under medier. 
 Den anvender formatet MPEG, som normalt bruges til digital video og lyd, altså video/film.
@@ -31,12 +32,13 @@ Jeg smed følgende inputs i configuration.yaml
 og lavede følgende script til at starte og afslutte afspilning, som jeg gemte i scripts.yaml
 https://github.com/MaximusClavius/cast-radio-kanaler/blob/main/script
 
-og følgende automation for at kunne ændre lydstyrke ved direkte berøring.
+<p>og følgende automation for at kunne ændre lydstyrke ved direkte berøring.</p>
 
-Dette korts yaml ser sådan ud: https://github.com/MaximusClavius/cast-radio-kanaler/blob/main/card-entilities
-Ønsker man at baggrunden skal være anderledes, så kan man ændre disse to CSS attributer:
+<p>Dette korts yaml ser sådan ud: https://github.com/MaximusClavius/cast-radio-kanaler/blob/main/card-entilities</p>
+
+<p>Ønsker man at baggrunden skal være anderledes, så kan man ændre disse to CSS attributer:
 background-color: rgba(255, 255, 255, 0.3); <- alfa: 0.3 giver størst effekt.
-background-blend-mode: lighten; <- alternativer: normal | multiply | screen | overlay | darken | lighten | color-dodge | color-burn | hard-light | soft-light | difference | exclusion | hue |saturation | color | luminosity
+background-blend-mode: lighten; <- alternativer: normal | multiply | screen | overlay | darken | lighten | color-dodge | color-burn | hard-light | soft-light | difference | exclusion | hue |saturation | color | luminosity</p>
 
 Tilføje eller fjerne radiokanaler skal ske i "input_select: radio_station", og i script: play_radio_channel under "media_content_id:" med relevant link fra Danish Radio Streams. Husk korrekt formatering!
 Samme metode for flere eller færre højttalere.
