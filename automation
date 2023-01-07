@@ -14,5 +14,5 @@ action:
         {% elif is_state("input_select.chromecast_radio", "Kontor") %} media_player.office
         {% elif is_state("input_select.chromecast_radio", "Alle") %} media_player.speakers
         {% endif %}
-      volume_level: "{{ states('input_number.volume_radio') }}"
+      volume_level: "{{ states('input_number.volume_radio') | float / 100 }}"
 mode: single
