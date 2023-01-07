@@ -1,4 +1,4 @@
-# Script til styring af vælg af kanal og højttaler, samt regulering af lydstyrke.
+# Script til styring af valg af kanal og højttaler, samt regulering af lydstyrke.
 
 play_radio_channel:
   alias: Spil radio
