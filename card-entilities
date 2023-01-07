@@ -1,4 +1,20 @@
 type: entities
+card_mod:
+  style: |
+    ha-card {
+      padding: 0% 0% 25% 0%;
+      background:
+        {% if is_state("input_select.radio_station", "DR P1") %} url('/local/P1_logo.png');
+        {% elif is_state("input_select.radio_station", "DR P2") %} url('/local/P2_logo.png');
+        {% elif is_state("input_select.radio_station", "DR P3") %} url('/local/P3_logo.png');
+        {% elif is_state("input_select.radio_station", "DR P4 Fyn") %} url('/local/P4_logo.png');
+        {% elif is_state("input_select.radio_station", "DR P5 Fyn") %} url('/local/P5_logo.png');
+        {% elif is_state("input_select.radio_station", "DR P6") %} url('/local/P6_logo.png');
+        {% elif is_state("input_select.radio_station", "DR P8") %} url('/local/P8_logo.png');
+        {% endif %}
+      background-size: 100% 100%;
+      background-color: transparent;
+    }
 entities:
   - entity: input_select.radio_station
     card_mod:
@@ -13,7 +29,7 @@ entities:
           --mdc-select-fill-color: transparent;
         }
   - entity: input_number.volume_radio
-    secondary_info: none
+    service: automation.set_radioplayer_volume
   - type: section
   - entity: script.play_radio_channel
     icon: mdi:music-box
@@ -32,26 +48,5 @@ entities:
         tap_action:
           action: call-service
           service: script.play_radio_channel
-      - icon: mdi:volume-high
-        name: Sæt styrke
-        tap_action:
-          action: call-service
-          service: script.set_volume
 title: Danske radiokanaler
 state_color: false
-card_mod:
-  style: |
-    ha-card {
-      padding: 0% 0% 25% 0%;
-      background:
-        {% if is_state("input_select.radio_station", "DR P1") %} url('/local/P1_logo.png');
-        {% elif is_state("input_select.radio_station", "DR P2") %} url('/local/P2_logo.png');
-        {% elif is_state("input_select.radio_station", "DR P3") %} url('/local/P3_logo.png');
-        {% elif is_state("input_select.radio_station", "DR P4 Fyn") %} url('/local/P4_logo.png');
-        {% elif is_state("input_select.radio_station", "DR P5 Fyn") %} url('/local/P5_logo.png');
-        {% elif is_state("input_select.radio_station", "DR P6") %} url('/local/P6_logo.png');
-        {% elif is_state("input_select.radio_station", "DR P8") %} url('/local/P8_logo.png');
-        {% endif %}
-      background-size: 100% 100%;
-      background-color: transparent;
-    }
