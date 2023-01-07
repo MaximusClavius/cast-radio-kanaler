@@ -1,7 +1,7 @@
 # cast-radio-kanaler
 Cast radiokanaler til højttalere/Cast radio channels to speakers
 
-<img src="https://user-images.githubusercontent.com/103023823/211158504-0a5ddada-555f-4ddf-9970-5425969c164d.png" width="300" height="300">
+<img src="https://user-images.githubusercontent.com/103023823/211158732-190f88d5-d59d-4ca2-8c10-391a3c3cb631.png" width="300" height="300">
 Jeg har en del Google Nest minis og JBL Flip, som jeg gerne vil bruge til afspilning af musik.
 Jeg prøvede at bruge integration: Radio Browser, som gemmer alverdens radiokanaler under medier. 
 Den anvender formatet MPEG, som normalt bruges til digital video og lyd, altså video/film.
