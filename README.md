@@ -2,7 +2,7 @@
 Cast radiokanaler til højttalere/Cast radio channels to speakers
 
 <img src="https://user-images.githubusercontent.com/103023823/211158774-eb0bd03a-c189-4688-a58b-732c480302dd.png" width="300" height="300">
-Jeg har en del Google Nest minis og JBL Flip, som jeg gerne vil bruge til afspilning af musik.
+Jeg har en del Google Nest minis, JBL Flip og Samsung TV, som jeg gerne vil bruge til afspilning af musik (JBL Flip og Samsung TV skal være tændt på forhånd).
 Jeg prøvede at bruge integration: Radio Browser, som gemmer alverdens radiokanaler under medier. 
 Den anvender formatet MPEG, som normalt bruges til digital video og lyd, altså video/film.
 Derfor begyndte jeg at kigge efter MP3 og streams, og fandt denne hjemmeside, Danish Radio Streams: https://www.astra2sat.com/danish-radio-streams/. 
