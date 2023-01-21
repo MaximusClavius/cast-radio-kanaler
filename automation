@@ -1,18 +1,20 @@
-alias: Set radioplayer volume
-description: ""
-trigger:
+  alias: Set radioplayer volume
+  description: ''
+  trigger:
   - platform: state
     entity_id:
-      - input_number.volume_radio
-condition: []
-action:
+    - input_number.volume_radio
+  condition: []
+  action:
   - service: media_player.volume_set
     data_template:
-      entity_id: >
-        {% if is_state("input_select.chromecast_radio", "Køkken") %} media_player.kitchen
+      entity_id: {% if is_state("input_select.chromecast_radio", "Køkken") %} media_player.kitchen
         {% elif is_state("input_select.chromecast_radio", "Stue") %} media_player.living_room
         {% elif is_state("input_select.chromecast_radio", "Kontor") %} media_player.office
+        {% elif is_state("input_select.chromecast_radio", "Samsung Q60") %} media_player.samsung_q60_series_58
+        {% elif is_state("input_select.chromecast_radio", "TV Samsung Q60") %} media_player.tv_samsung_q60_series_58
+        {% elif is_state("input_select.chromecast_radio", "JBL Flip 4") %} media_player.office
         {% elif is_state("input_select.chromecast_radio", "Alle") %} media_player.speakers
         {% endif %}
-      volume_level: "{{ states('input_number.volume_radio') | float / 100 }}"
-mode: single
+      volume_level: '{{ states(''input_number.volume_radio'') | float / 100 }}'
+  mode: single
