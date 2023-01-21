@@ -19,6 +19,9 @@ input_select:
       - Køkken
       - Stue
       - Kontor
+      - Samsung Q60
+      - TV Samsung Q60
+      - JBL Flip 4
       - Alle
     initial: Kontor
     icon: mdi:speaker-wireless
