@@ -45,6 +45,4 @@ Samme metode for flere eller færre højttalere.
 
 Genstart scripts og input under udviklingsværktøjer > YAML eller genstart konfiguration
 
-https://www.paypal.com/donate/?hosted_button_id=NNUF56TVFMJXY
-
-PayPal.Donation.Button({ env:'production', hosted\_button\_id:'NNUF56TVFMJXY', image: { src:'https://www.paypalobjects.com/da\_DK/DK/i/btn/btn\_donateCC\_LG.gif', alt:'Doner penge med PayPal-knappen', title:'PayPal - The safer, easier way to pay online!', } }).render('#donate-button');
+<a href="https://www.paypal.com/donate/?hosted_button_id=NNUF56TVFMJXY"><img src="https://www.paypalobjects.com/da_DK/DK/i/btn/btn_donateCC_LG.gif" alt="HTML tutorial"></a>
